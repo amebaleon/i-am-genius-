@@ -8,23 +8,8 @@ struct height {
 
 int main()
 {
-	struct height List[5];
-	
-	int i, j;
-	double min = 1000;
-	char minName[10];
-	
-	for(i = 0; i < 5; i++)
-	{
-		if (min > List[i].height)
-		{
-			strcpy(minName, List[i].name);
-			min = List[i].height;
-		}
-	}
-	
-	printf("%5s%6.2lfcm\n",minName,min);
-	
+	struct height p1,p2,p3;
+
 	return 0;
 	
 }
