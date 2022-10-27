@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+<<<<<<< HEAD
 	int ia, ib;
 	char ca = 'A';
 	double da = 0.5,db;
@@ -17,3 +18,12 @@ int main()
 	return 0;
 }
 
+=======
+	int a,b;
+	int *ap=&a,*bp=&b;
+	scanf("%d %d",ap,bp);
+	printf("*ap(%d) * 10 = %d\n",*ap,*ap*10);
+	printf("*bp(%d) / 2 = %d",*bp,*bp/2);
+	return 0;
+}
+>>>>>>> e103d580588d7f74c41de3e28ed165c05641a835

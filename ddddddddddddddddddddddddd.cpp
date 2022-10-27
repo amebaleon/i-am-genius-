@@ -1,0 +1,97 @@
+#include <stdio.h>
+int main()
+{
+int a[10] = {0,};
+int aa,bb,cc;
+scanf("%d",&a[0]);
+if(a[0]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[1]);
+if(a[1]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[2]);
+if(a[2]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[3]);
+if(a[3]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[4]);
+if(a[4]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+if(a[5]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[1]);
+if(a[6]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[2]);
+if(a[7]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[3]);
+if(a[8]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+scanf("%d",&a[4]);
+if(a[9]%2==0)
+{
+	aa=+1;
+}
+else
+{
+	bb=+1;
+}
+printf("odd : %d",bb);
+printf("even : %d",aa);
+}
