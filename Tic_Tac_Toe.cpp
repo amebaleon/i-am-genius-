@@ -10,7 +10,7 @@ int main()
 	int length;
 	int count=0;
 	int nine=0;
-	printf("'°¡·Î ¼¼·Î' ÇüÅÂ·Î ÀÔ·Â\nÀÌÇØÇß´Ù¸éokayÀÔ·Â");
+	printf("'ê°€ë¡œ ì„¸ë¡œ' í˜•íƒœë¡œ ìž…ë ¥\nì´í•´í–ˆë‹¤ë©´okayìž…ë ¥");
 	while(1)
 	{
 	scanf("%s",input_str);
@@ -20,8 +20,8 @@ int main()
 		}
 	}
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		printf("¸Ê ¸ð¾ç(Âü°í)\n");
-	printf("   2 1 0\n   £þ£þ£þ\n");
+		printf("ë§µ ëª¨ì–‘(ì°¸ê³ )\n");
+	printf("   2 1 0\n   ï¿£ï¿£ï¿£\n");
 	printf("0| 0 0 0\n");
 	printf("1| 0 0 0\n");
 	printf("2| 0 0 0\n");
@@ -50,7 +50,7 @@ int main()
 void mapprint(int data[3][3])
 {
 	int k=2;
-	printf("   2 1 0\n   £þ£þ£þ\n");
+	printf("   2 1 0\n   ï¿£ï¿£ï¿£\n");
 		for(int i = 2;i > -1;i--)
 	{
 		printf("%d| ",k);
