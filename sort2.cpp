@@ -2,6 +2,7 @@
 #include <string.h>
 void swap (struct student *first, struct student *second);
 void sort (struct student stu[], int len);
+
 struct student{
 	char name[100];
 	int one;
@@ -16,6 +17,7 @@ int main(){
 	int count=0;
 	char height;
 	char weight;
+
 	for(int i = 0; i<numberofstudents; i++){
 		scanf("%s", stu[i].name);
 		scanf("%d", &stu[i].one);
