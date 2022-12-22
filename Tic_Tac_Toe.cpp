@@ -9,7 +9,8 @@ int main()
 	int width;
 	int length;
 	int count=0;
-	printf("'°¡·Î ¼¼·Î' ÇüÅÂ·Î ÀÔ·Â\nÀÌÇØÇß´Ù¸éokayÀÔ·Â");
+	int nine=0;
+	printf("'ê°€ë¡œ ì„¸ë¡œ' í˜•íƒœë¡œ ì…ë ¥\nì´í•´í–ˆë‹¤ë©´okayì…ë ¥");
 	while(1)
 	{
 	scanf("%s",input_str);
@@ -18,35 +19,57 @@ int main()
 		break;	
 		}
 	}
-	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	scanf("%d %d",&width,&length);
-	if(count%2=0)
-	{
-		map
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		printf("ë§µ ëª¨ì–‘(ì°¸ê³ )\n");
+	printf("   2 1 0\n   ï¿£ï¿£ï¿£\n");
+	printf("0| 0 0 0\n");
+	printf("1| 0 0 0\n");
+	printf("2| 0 0 0\n");
+	while(1)
+	{ 
+		if(nine<9)
+		{
+			scanf("%d %d",&width,&length);
+			if(count % 2 == 1)
+			{
+				
+				map[width][length] = 1;
+				count++;
+			
+			}
+			else if(count % 2 == 0)
+			{
+				map[width][length] = 2;
+				count++;
+			}
+			mapprint(map);
+			nine++;
+		}
 	}
-	mapprint(map);
-	
 }
 void mapprint(int data[3][3])
 {
-	int k=0;
-	printf("   1 2 3\n   £ş£ş£ş\n");
+	int k=2;
+	printf("   2 1 0\n   ï¿£ï¿£ï¿£\n");
 		for(int i = 2;i > -1;i--)
 	{
 		printf("%d| ",k);
 			for(int j = 2;j > -1;j--)
 		{
-		
-		printf("%d ",data[i][j]);
-	
-
+		if(data[i][j] == 1)
+		{
+		printf("X ");
+		}
+		else if(data[i][j] == 2)
+		{
+		printf("O ");
+		}
+		else if(data[i][j] == 0)
+		{
+		printf("  ");
+		}
 		}
 	printf("\n");
-	k++;
+	k--;
 	}
 }
-
-
-//0 = nothing
-//1 = x
-//2 = o 
